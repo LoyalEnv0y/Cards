@@ -9,7 +9,7 @@ func TestNewDeck(t *testing.T) {
 	d := NewDeck()
 
 	if len(d) != 52{
-		t.Errorf("Expected deck lenght of 52, but got %v", len(d))
+		t.Errorf("Expected decks lenght of 52, but got %v", len(d))
 	}
 	if d[0] != "Ace of Clubs"{
 		t.Errorf("Expected Ace of Clubs got %v", d[0])
@@ -26,7 +26,7 @@ func TestSaveToDeckAndNewDeckFromFile(t *testing.T){
 
 	loadedDeck := NewDeckFromFile("_decktesting")
 	if len(loadedDeck) != 52{
-		t.Errorf("Expected 52 cards in deck, got %v", len(loadedDeck))
+		t.Errorf("Expected 52 cards in decks, got %v", len(loadedDeck))
 	}
 	os.Remove("_decktesting")
 }
