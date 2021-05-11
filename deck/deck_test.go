@@ -2,7 +2,7 @@ package deck
 
 import (
 	"os"
-"testing"
+	"testing"
 )
 
 func TestNewDeck(t *testing.T) {
